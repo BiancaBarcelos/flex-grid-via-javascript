@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;600&display=swap');
+
+* {
+    color: #F5EBE2;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body {
+    margin: 0;
+    padding-bottom: 50px;
+    background-color: #E9A986;
+}
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+.titulo {
+    text-align: center;
+}
+.titulo h1 {
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.titulo h3 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.grid-imagem {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.grid-imagem div {
+    width: calc(25% - 20px);
+}
+.grid-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    transition: .4s all;
+}
+.grid-imagem img:hover {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 15px 8px #00000066;
+}
+.btn-box {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background-color: #F5EBE230;
+    border: 3px solid #F5EBE2;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .4s all;
+    font-weight: 600;
+}
+.btn:hover {
+    background-color: #F5EBE2;
+    color: #E9A986;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-imagem div {
+        width: calc(33% - 20px);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .grid-imagem div {
+        width: calc(50% - 20px);
+    }
+    
+}
